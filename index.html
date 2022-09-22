@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Тестовое задание</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <!-- Don't use this in production: -->
+    
+  </head>
+  <body>
+   
+    <div id="item">
+        
+    </div>
+    
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js " crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="main.js" type="text/babel"></script>
+    <script src="Item.js" type="text/babel"></script>
+    <script src="Details.js" type="text/babel"></script>
+    <script type="text/babel">
+        ReactDOM.render(<Items/>, document.querySelector('#item'));
+    </script>
+    
+  </body>
+</html>
