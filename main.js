@@ -16,7 +16,7 @@ class Items extends React.Component {
         }
         
         // Запрос списка товаров
-        fetch('http://127.0.0.1:8000/get_all_items/').
+        fetch('https://shrouded-wave-99510.herokuapp.com/get_all_items/').
         then(response => response.json()).
         then(data=>{
             data = data.map(item=>{item.count = 0
@@ -59,7 +59,7 @@ class Items extends React.Component {
               },
             body: JSON.stringify(data)
         }
-        fetch('http://127.0.0.1:8000/bay_items/', options).
+        fetch('https://shrouded-wave-99510.herokuapp.com/bay_items/', options).
         then(response => response.json()).
         then(data=>{
             if (data.error){

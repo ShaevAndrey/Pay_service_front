@@ -2,8 +2,8 @@ class Details extends React.Component {
     constructor(props){
         super(props);
         this.bay_item = this.bay_item.bind(this)
-        this.GET_URL = 'http://127.0.0.1:8000/item/'
-        this.BAY_URL = 'http://127.0.0.1:8000/bay/'
+        this.GET_URL = 'https://shrouded-wave-99510.herokuapp.com/item/'
+        this.BAY_URL = 'https://shrouded-wave-99510.herokuapp.com/bay/'
         this.state = {
             item:{}
         }
